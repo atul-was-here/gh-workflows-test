@@ -1,0 +1,10 @@
+name: Hello WF
+on: 
+  workflow_dispatch:
+
+jobs:
+  hello-one:
+    runs-on: ubuntu-latest
+    environment: test
+    steps:
+    - run: echo "Hello One"
