@@ -16,3 +16,10 @@ jobs:
     environment: test
     steps:
     - run: echo "Hello One"
+
+  hello-oe:
+    runs-on: ubuntu-latest
+    needs: manual-approval
+    environment: txyz
+    steps:
+    - run: echo "Hello One"
